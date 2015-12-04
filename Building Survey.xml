@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<h:head>
+		<h:title>Building Survey</h:title>
+		<model>
+			<instance>
+				<building_survey id="building_survey">
+					<date_time/>
+					<location/>
+					<image/>
+					<building_type/>
+					<constructed_year/>
+					<no_floors/>
+					<comments/>
+				</building_survey>
+			</instance>
+			<bind nodeset="/building_survey/date_time" type="dateTime"/>
+			<bind nodeset="/building_survey/location" type="geopoint"/>
+			<bind nodeset="/building_survey/image" type="binary"/>
+			<bind nodeset="/building_survey/building_type" type="select1"/>
+			<bind nodeset="/building_survey/constructed_year" type="date"/>
+			<bind nodeset="/building_survey/no_floors" type="decimal"/>
+			<bind nodeset="/building_survey/comments" type="string"/>
+		</model>
+	</h:head>
+	<h:body>
+		<input ref="/building_survey/date_time">
+			<label>Survey Date and Time</label>
+		</input>
+		<input  appearance="maps" ref="/building_survey/location">
+			<label>Building location</label>
+		</input>
+		<upload mediatype="image/*" ref="/building_survey/image">
+			<label>Building Picture</label>
+		</upload>
+		<group appearance="field-list">
+			<label>Building Information</label>
+			<select1 ref="/building_survey/building_type">
+				<label>Buiding Type</label>
+				<item>
+					<label>Residential</label>
+					<value>Residential</value>
+				</item>
+				<item>
+					<label>Commercial</label>
+					<value>Commercial</value>
+				</item>
+				<item>
+					<label>Industrial</label>
+					<value>Industrial</value>
+				</item>
+				<item>
+					<label>Governmental</label>
+					<value>Governmental</value>
+				</item>
+				<item>
+					<label>Intertainment</label>
+					<value>Intertainment</value>
+				</item>
+				<item>
+					<label>Other</label>
+					<value>Other</value>
+				</item>
+			</select1>
+			<input ref="/building_survey/constructed_year" appearance="year">
+				<label>Constructed year</label>
+			</input>
+			<input ref="/building_survey/no_floors">
+				<label>Number of floors</label>
+			</input>		  
+		</group>
+		<input ref="/building_survey/comments">
+			<label>Comments</label>
+		</input>
+	</h:body>
+</h:html>
