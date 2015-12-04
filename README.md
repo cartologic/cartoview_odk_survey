@@ -9,8 +9,8 @@ Configure GIS data collection applications to create a surveys by using ODK with
 ### Author your survey form 
 
 ODK supports only xml format, and you have two options to create xml form:
-1. You can use ODK form builder to generate your form  http://build.opendatakit.org/
-2. You can create your form in xls format then convert it to xml format by using the online xls to xml converter http://opendatakit.org/xiframe/
+- You can use ODK form builder to generate your form  http://build.opendatakit.org/
+- You can create your form in xls format then convert it to xml format by using the online xls to xml converter http://opendatakit.org/xiframe/
 For more details about creating XLS Form visit the following link https://opendatakit.org/use/xlsform/
 
 Upload your form to ODK Aggregate through selecting "Form Management" tab and click "Add New Form" button then browse your form to be uploaded
