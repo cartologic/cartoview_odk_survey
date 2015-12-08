@@ -13,20 +13,20 @@ ODK supports only xml format, and you have two options to create xml form:
 - You can create your form in xls format then convert it to xml format by using the online xls to xml converter http://opendatakit.org/xiframe/
 For more details about creating XLS Form visit the following link https://opendatakit.org/use/xlsform/
 
-Upload your form to ODK Aggregate through selecting "Form Management" tab and click "Add New Form" button then browse your form to be uploaded
+Upload your form to ODK Aggregate through selecting **"Form Management"** tab and click "Add New Form" button then browse your form to be uploaded
 
 ### Download and configure ODK Collector on your mobile
 - Download and install ODK Collect from Google Play
-- After installation open "General Settings" from setting menu and select "Configure platform settings" and fill the fields as the following:
+- After installation open **"General Settings"** from setting menu and select **"Configure platform settings"** and fill the fields as the following:
 
 ```sh
-URL: http:// 72.249.76.10:8088/odkaggregate
-Username: admin
-Password: admin
+**URL:** *http://<Tomcat Server URL>/<ODK Aggregate Instance name>*   // Cartoview default tomcat server on *http://localhost:4041*
+**Username:** *<ODK Aggregate Userneme>*
+**Password:** *<ODK Aggregate Password>*  // defalt password is *aggregate*
 ```
-- Back to home menu and click "Get Blank From" button to get the forms from the server
-- Click "Fill Blank Form" and select the form and fill it
-- Click "Send Finalized From" to send the completed forms
+- Back to home menu and click **"Get Blank From"** button to get the forms from the server
+- Click **"Fill Blank Form"** and select the form and fill it
+- Click **"Send Finalized From"** to send the completed forms
 
 ### Basic useful features
 - Perform Survey easly from your mobile
