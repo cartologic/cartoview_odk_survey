@@ -2,9 +2,9 @@
 Configure GIS data collection applications to create a surveys by using ODK with [Cartoview](http://cartoview.org) and [GeoNode](http://geonode.org).
 
 ### Requirements
-- Install [Cartoview](https://github.com/cartologic/cartoview)
-- Install [ODK Aggregate Server](https://github.com/cartologic/cartoview_odk_connector)
-- Install [ODK Connector App](https://github.com/cartologic/cartoview_odk_connector)
+- [Cartoview](https://github.com/cartologic/cartoview)
+- [ODK Aggregate Server](https://github.com/cartologic/cartoview_odk_connector)
+- [ODK Connector App](https://github.com/cartologic/cartoview_odk_connector)
 
 ### Author your survey form 
 
